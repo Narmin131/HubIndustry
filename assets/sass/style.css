@@ -99,6 +99,7 @@ header ul button i {
 .second .second-text p {
   color: #fff;
   text-align: center;
+  line-height: 2;
 }
 
 .second .second-item {
@@ -119,7 +120,13 @@ header ul button i {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px;
-  padding: 5px;
+  padding: 15px 0;
+}
+
+.second .second-item i {
+  color: #fff;
+  font-size: 4.3rem;
+  margin: 8px 0;
 }
 
 .second .second-item h2 {
@@ -132,6 +139,7 @@ header ul button i {
   font-size: .9rem;
   text-align: center;
   color: #fff;
+  font-weight: 200;
 }
 
 .second .second-item button {
@@ -392,5 +400,148 @@ header ul button i {
 
 .discover .discover-box button:hover {
   background-color: var(--third-color);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px 30px 0 30px;
+}
+
+footer .ft1 {
+  width: 100%;
+  height: 100%;
+}
+
+footer .ft1 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .ft1 .top p {
+  font-size: 1.1rem;
+}
+
+footer .ft1 .icons {
+  height: auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .ft1 .icons i {
+  color: var(--second-color);
+  font-size: 1.2rem;
+}
+
+footer .links {
+  width: 100%;
+  height: 100%;
+}
+
+footer .links h1 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+footer .links p {
+  color: var(--main-color);
+  font-size: 1rem;
+}
+
+footer .right-input {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+footer .right-input h1 {
+  font-size: 1.5rem;
+  line-height: 2;
+  font-weight: bold;
+}
+
+footer .right-input .all {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+
+footer .right-input .all input {
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+footer .right-input .all button {
+  background-color: var(--second-color);
+  color: #fff;
+  outline: none;
+  -webkit-transform: all .3s ease;
+          transform: all .3s ease;
+  border: none;
+  padding: 10px 30px;
+}
+
+footer .right-input .all button:hover {
+  background-color: var(--third-color);
+}
+
+footer .right-input p {
+  margin: 1rem 0;
+}
+
+footer .footer-end {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid var(--main-color);
+  padding: 20px;
+}
+
+footer .footer-end p {
+  margin: 0;
+  color: var(--third-color);
+  font-size: .8rem;
 }
 /*# sourceMappingURL=style.css.map */

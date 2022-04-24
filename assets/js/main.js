@@ -1,28 +1,44 @@
-
-// Fourth way
+// Adding local storage 
 let theme = localStorage.getItem('data-theme');
 const Btn = document.querySelector('.btn1');
-const logo = document.querySelector('.img');
+const logo = document.querySelectorAll('.img');
 
 const changeThemeToBlue = () =>{
     document.documentElement.setAttribute("data-theme", "blue");
     localStorage.setItem("data-theme", "blue");
-    if(logo.src.match('assets/img/green.png')){
-        logo.src = 'assets/img/blue.png' ;
-    }
-    else{
-        logo.src = 'assets/img/green.png' ;
+    // if(logo.src.match('assets/img/green.png')){
+    //     logo.src = 'assets/img/blue.png' ;
+    // }
+    // else{
+    //     logo.src = 'assets/img/green.png' ;
+    // }
+    for(var x= 0;x<logo.length;x++){
+        if(logo[x].src.match('assets/img/green.png')){
+            logo[x].src = 'assets/img/blue.png' ;
+        }
+        else{
+            logo[x].src = 'assets/img/green.png' ;
+        }
     }
 }
+
 
 const changeThemeToGreen = () =>{
     document.documentElement.setAttribute("data-theme", "green");
     localStorage.setItem("data-theme", 'green');
-    if(logo.src.match('assets/img/green.png')){
-        logo.src = 'assets/img/blue.png' ;
-    }
-    else{
-        logo.src = 'assets/img/green.png' ;
+    // if(logo.src.match('assets/img/green.png')){
+    //     logo.src = 'assets/img/blue.png' ;
+    // }
+    // else{
+    //     logo.src = 'assets/img/green.png' ;
+    // }
+    for(var x= 0;x<logo.length;x++){
+        if(logo[x].src.match('assets/img/green.png')){
+            logo[x].src = 'assets/img/blue.png' ;
+        }
+        else{
+            logo[x].src = 'assets/img/green.png' ;
+        }
     }
 }
 
