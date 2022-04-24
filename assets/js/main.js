@@ -7,22 +7,22 @@ const logo = document.querySelector('.img');
 const changeThemeToBlue = () =>{
     document.documentElement.setAttribute("data-theme", "blue");
     localStorage.setItem("data-theme", "blue");
-    if(logo.src.match('assets/img/yasil.png')){
-        logo.src = 'assets/img/goy.png' ;
+    if(logo.src.match('assets/img/green.png')){
+        logo.src = 'assets/img/blue.png' ;
     }
     else{
-        logo.src = 'assets/img/yasil.png' ;
+        logo.src = 'assets/img/green.png' ;
     }
 }
 
 const changeThemeToGreen = () =>{
     document.documentElement.setAttribute("data-theme", "green");
     localStorage.setItem("data-theme", 'green');
-    if(logo.src.match('assets/img/yasil.png')){
-        logo.src = 'assets/img/goy.png' ;
+    if(logo.src.match('assets/img/green.png')){
+        logo.src = 'assets/img/blue.png' ;
     }
     else{
-        logo.src = 'assets/img/yasil.png' ;
+        logo.src = 'assets/img/green.png' ;
     }
 }
 
