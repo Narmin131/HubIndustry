@@ -1,6 +1,5 @@
-@import "media";
 @import 'variables';
-
+@import "media";
 *,body{
     font-family: 'Poppins', sans-serif;
     transition: all .3s ease;
@@ -17,17 +16,7 @@ html[data-theme = 'blue']{
     --third-color:#6998AB ;
 }
 
-
-
-
-// Hero section
-// .hero{
-//   width: 100%;
-//   height: auto;
-//   background-color: cadetblue;
-  
-// }
-
+// Header
 header{
       height: 17vh;
       width: 100%;
@@ -67,6 +56,116 @@ header{
 
   }
 
+// Slider section
+.swiper{
+    width: 100%;
+    height: 83vh;
+    .btn-hero{
+        color: var(--second-color);
+    }
+    .left-txt{
+        width: 100%;
+        height: 93%;
+        @include center;
+        h1{
+            color: var(--main-color);
+            font-weight: bold;
+            font-size: 3.2rem;
+            }
+            p{
+              color: var(--second-color);
+              font-size: 1.1rem;
+              line-height: 1.7;
+              padding-right: 20px;
+              padding-top: 20px;
+            }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            .start{
+                background-color: var(--main-color);
+                color: #fff;
+                outline: none;
+                transform: all .3s ease;
+                border: none;
+                padding: 10px 30px;
+                border-radius: 20px;
+                &:hover{
+                    background-color: var(--second-color);
+                }
+            }
+            i{
+                background-color: var(--main-color);
+                border-radius: 50%;
+                width: 2.8rem;
+                height: 2.8rem;
+                line-height: 2.8rem;
+                outline: none;
+                transform: all .3s ease;
+                border: none;
+                color: white;
+                font-size: 1.4rem;
+                cursor: pointer;
+                text-align: center;
+                margin-left: 4rem;
+                &:hover{
+                    background-color: var(--third-color);
+                }
+                
+            }
+            a{
+                text-decoration: none;
+                color: var(--main-color);
+                &:hover{
+                    color: var(--third-color);
+                }
+                margin-left: 10px;
+            }
+        }
+    
+        .bottom-text{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-top: 3rem;
+            h4{
+                color: var(--main-color);
+                font-size: 1rem;
+                margin-right: 2rem;
+                
+                i{
+                    background-color: var(--main-color);
+                    border-radius: 50%;
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    line-height: 1.3rem;
+                    outline: none;
+                    transform: all .3s ease;
+                    border: none;
+                    color: white;
+                    font-size: .7rem;
+                    cursor: pointer;
+                    text-align: center;
+                    margin-right: 3px;
+                }
+            }
+        }
+
+    }
+    .right-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 30px;
+}
 
 // Second section
 .second{
@@ -251,9 +350,8 @@ header{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 20px 200px;
         .partner{
-        width: 100%;
+        width: 16%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -261,8 +359,7 @@ header{
         align-items: center;
         background-color: #fff;
         border-radius: 5px;
-        padding: 3px;
-        margin: 10px 20px;
+        margin: 10px;
         
     }
   }
@@ -398,4 +495,20 @@ footer{
           font-size: .8rem;
       }
     }
+}
+
+
+.load{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 763872;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }

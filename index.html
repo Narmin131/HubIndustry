@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="green">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Toptul</title>
     <link rel="stylesheet" href="assets/sass/style.css">
 </head>
@@ -29,62 +31,106 @@
     <header>
         <div class="container-fluid h-100">
             <div class="row h-100 justify-content-between">
-                <div class="col-lg-3 col-md-4  col-sm-3 h-100">
+                <div class="col-lg-3 col-md-4  col-sm-2 col-12 h-100">
                     <div class="logoimg">
-                        <img src="assets/img/green.png" width="160px" class="img" >
+                        <img src="assets/img/green.png" width="160px" class="img">
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-8 col-sm-9 h-100">
-<ul>
-    <li><a href="">About App</a></li>
-    <li><a href="">How It Works</a></li>
-    <li><a href="">Features</a></li>
-    <li><a href="">Blog</a></li>
-    <li><a href="">Contact</a></li>
-    <button class="btn1"><i class="fa-solid fa-circle-half-stroke"></i></button>
-</ul>
+                <div class="col-lg-7 col-md-8 col-sm-10 col-12 h-100">
+                    <ul>
+                        <li><a href="">About App</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                        <button class="btn1"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- ############################################ -->
-    <!-- Header  start-->
+    <!-- Header end-->
     <!-- ############################################ -->
 
 
     <!-- ############################################ -->
-    <!-- Hero  section start-->
+    <!-- Slider  section start-->
     <!-- ############################################ -->
 
-   
-    <!-- <section class="hero">
 
-        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" >
-                <div class="inner-item">
-                    <img src="assets/img/car.png">
-                    <h1>Managing freelance payments has never been easier</h1>
-                    <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. </p>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide ">
+                <div class="container-lg container-fluid  h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12
+                        justify-content-center align-items-center ">
+                            <div class="left-txt">
+                                <h1>Managing freelance payments has never been easier</h1>
+                                <p>Yet bed any for travelling assistance indulgence  unpleasing. Not thoughts all
+                                    exercise blessing. </p>
+                                 <div class="bottom">
+                                    <button class="start">Get Started</button>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">See how it works</a>
+                                 </div>
+                                 <div class="bottom-text">
+                                     <h4><i class="fa-solid fa-check"></i> Register</h4>
+                                     <h4><i class="fa-solid fa-check"></i>Great Service</h4>
+                                 </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                            <div class="right-img">
+                                <img src="assets/img/car.png" width="95%">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/porsche_car.png" >
-              </div>
+             
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </section> -->
+            <div class="swiper-slide ">
+                <div class="container-lg container-fluid h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 
+                        justify-content-center align-items-center">
+                            <div class="left-txt">
+                                <h1>Managing freelance payments has never been easier</h1>
+                                <p>Yet bed any for travelling assistance indulgence  unpleasing. Not thoughts all
+                                    exercise blessing. </p>
+                                 <div class="bottom">
+                                    <button class="start">Get Started</button>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">See how it works</a>
+                                 </div>
+                                 <div class="bottom-text">
+                                     <h4><i class="fa-solid fa-check"></i> Register</h4>
+                                     <h4><i class="fa-solid fa-check"></i>Great Service</h4>
+                                 </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                            <div class="right-img">
+                                <img src="assets/img/porsche_car.png" width="95%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+             
+            </div>
+        </div>
+        <div class="swiper-button-prev btn-hero"></div>
+        <div class="swiper-button-next btn-hero"></div>
+    </div>
+
     <!-- ############################################ -->
-    <!-- Hero  section start-->
+    <!-- Slider  section end-->
     <!-- ############################################ -->
 
     <!-- ############################################ -->
@@ -97,12 +143,12 @@
                 <div class="col-lg-10 pb-4">
                     <div class="second-text">
                         <h1>Caring for plants has never been easier</h1>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the <br> majority have
-                            suffered alteration in some form, by injected humour, or <br> randomised words which don't
+                        <p>There are many variations of passages of Lorem Ipsum available, but the  majority have
+                            suffered alteration in some form, by injected humour, or  randomised words which don't
                             look even slightly believable.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 p-3 d-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-3 d-flex justify-content-center align-items-center">
                     <div class="second-item">
                         <i class="fa-solid fa-car"></i>
                         <h2>Lorem Ipsum</h2>
@@ -112,7 +158,7 @@
                         <button>Get Started</button>
                     </div>
                 </div>
-                <div class="col-lg-3 p-3 d-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-3 d-flex justify-content-center align-items-center">
                     <div class="second-item">
                         <i class="fa-solid fa-car-battery"></i>
                         <h2>Lorem Ipsum</h2>
@@ -122,7 +168,7 @@
                         <button>Get Started</button>
                     </div>
                 </div>
-                <div class="col-lg-3 p-3 d-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-3 d-flex justify-content-center align-items-center">
                     <div class="second-item">
                         <i class="fa-brands fa-nfc-symbol"></i>
                         <h2>Lorem Ipsum</h2>
@@ -132,7 +178,7 @@
                         <button>Get Started</button>
                     </div>
                 </div>
-                <div class="col-lg-3 p-3 d-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-3 d-flex justify-content-center align-items-center">
                     <div class="second-item">
                         <i class="fa-solid fa-handshake-simple"></i>
                         <h2>Lorem Ipsum</h2>
@@ -188,24 +234,24 @@
     <section class="statistic">
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                     <div class="left-text">
                         <h1>We speak with <br> our powerful <br> statistics</h1>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                     <div class="statistic-item">
                         <h1>1M+</h1>
                         <p><i class="fa-solid fa-user"></i>Active Users</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                     <div class="statistic-item">
                         <h1>30K+</h1>
                         <p><i class="fa-solid fa-star"></i>5-Stars Reviews</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                     <div class="statistic-item">
                         <h1>$252M+</h1>
                         <p><i class="fa-solid fa-star"></i>Transactions</p>
@@ -262,7 +308,7 @@
     <section class="partners">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 pb-lg-5 pb-md-4 pb-sm-3 pb-0">
                     <div class="text">
                         <h1>Caring for plants has never been easier</h1>
                         <p>There are many variations of passages of Lorem Ipsum available, but the <br> majority have
@@ -271,7 +317,7 @@
                             even slightly believable.</p>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 pb-4">
                     <div class="partner-box">
                         <div class="partner">
                             <img src="assets/img/tesla.png" width="70%">
@@ -290,7 +336,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 pb-4">
                     <div class="partner-box">
                         <div class="partner">
                             <img src="assets/img/kia.png" width="70%">
@@ -336,25 +382,25 @@
     <!-- ############################################ -->
     <!--Footer start-->
     <!-- ############################################ -->
-   
+
     <footer>
         <div class="container-fluid h-100">
             <div class="row h-100">
-                <div class="col-lg-3 col-md-3 col-sm-6 order-lg-1 order-md-1 order-sm-1">
-<div class="ft1">
-    <div class="top">
-        <img src="assets/img/green.png" width="50%" class="img">
-    <p>Finance helps companies <br> manage payment easily</p>
-    </div>
-    <div class="icons">
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-facebook-messenger"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-solid fa-infinity"></i>
-    </div>
-</div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 order-lg-1 order-md-1 order-sm-1 order-1">
+                    <div class="ft1">
+                        <div class="top">
+                            <img src="assets/img/green.png" width="50%" class="img">
+                            <p>Finance helps companies <br> manage payment easily</p>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-infinity"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-6 order-lg-2 order-md-2 order-sm-4 ">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6 order-lg-2 order-md-2 order-sm-4 order-4">
                     <div class="links">
                         <h1>Company</h1>
                         <p>About Us</p>
@@ -363,7 +409,7 @@
                         <p>Pricing</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 order-lg-3 order-md-3 order-sm-3 ">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 order-lg-3 order-md-3 order-sm-3 order-3">
                     <div class="links">
                         <h1>Resources</h1>
                         <p>Proposal Template</p>
@@ -372,18 +418,18 @@
                         <p>How to write contract</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 order-lg-4 order-md-4 order-sm-2 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-lg-4 order-md-4 order-sm-2 order-2">
                     <div class="right-input">
                         <h1>Join Our Newsletter </h1>
                         <div class="all">
-                        <input type="text">
-                        <button>Subscibe</button>
+                            <input type="text">
+                            <button>Subscibe</button>
                         </div>
-                        <p>*We will send you weekly updates for your better  finance management</p>
+                        <p>*We will send you weekly updates for your better finance management</p>
                     </div>
                 </div>
-                <div class="col-lg-12 pt-3 h-100 order-lg-5 order-md-5 order-sm-5">
-                    <div class="footer-end">
+                <div class="col-lg-12 pt-3 h-100 order-lg-5 order-md-5 order-sm-5 order-5">
+                    <div class="footer-end"> 
                         <p>Copywright @ Webluna LLC 2022.All Rights Reserved</p>
                     </div>
                 </div>
@@ -391,14 +437,21 @@
         </div>
     </footer>
 
+<!-- ############################################ -->
+<!-- Loading page -->
+<!-- ############################################ -->
 
-
+    <div class="load">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_0jYzbp.json"  background="#FFFFFF"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
