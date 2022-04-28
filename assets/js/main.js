@@ -70,7 +70,9 @@ const swiper = new Swiper('.swiper', {
     
   });
 
+// #####################################
 // Loading page
+// #####################################
 
 const loader = document.querySelector(".load");
 window.onload = function(){
