@@ -6,7 +6,11 @@
         .logoimg{
             width: 100%;
             height: 100%;
-            @include center;
+           
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
             overflow: hidden;
             padding:0 !important;
             margin: 0 !important;
@@ -14,29 +18,19 @@
         ul{
             width: 100%;
             height: 100%;
+            display: none !important;
+           
+        }
+        .icons{
+            width: 100% !important;
+            height: 100% !important;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            li{
-                a{
-                    color: var(--main-color);
-                    text-decoration: none;
-                    transition: all .3s ease;
-                    &:hover{
-                        color: var(--third-color);
-                    }
-                }
-            }
-            button{
-                outline: none;
-                border: none;
-                background-color: transparent;
-                i{
-                    color: var(--third-color);
-                }
-            }
+            justify-content: flex-end !important;
         }
+   .left-menu{
+                display: block !important;
+            }
   
     }
     
@@ -449,31 +443,18 @@
         ul{
             width: 100%;
             height: 100%;
+            display: none !important;
+           
+        }
+        .icons{
+            width: 100% !important;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            align-items: center !important;
-            li{
-                a{
-                    color: var(--main-color);
-                    text-decoration: none;
-                    transition: all .3s ease;
-                    font-size: .9rem !important;
-                    &:hover{
-                        color: var(--third-color);
-                    }
-                }
-            }
-            button{
-                outline: none;
-                border: none;
-                background-color: transparent;
-                i{
-                    color: var(--third-color);
-                }
-            }
+            justify-content: flex-end !important;
         }
-  
+   .left-menu{
+                display: block !important;
+            }
     }
     
     .swiper{

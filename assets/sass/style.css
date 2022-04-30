@@ -6,19 +6,19 @@
   header .logoimg {
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
     overflow: hidden;
     padding: 0 !important;
     margin: 0 !important;
@@ -26,6 +26,11 @@
   header ul {
     width: 100%;
     height: 100%;
+    display: none !important;
+  }
+  header .icons {
+    width: 100% !important;
+    height: 100% !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -33,28 +38,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
-  header ul li a {
-    color: var(--main-color);
-    text-decoration: none;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-  header ul li a:hover {
-    color: var(--third-color);
-  }
-  header ul button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-  }
-  header ul button i {
-    color: var(--third-color);
+  header .left-menu {
+    display: block !important;
   }
   .swiper {
     width: 100%;
@@ -583,6 +572,10 @@
   header ul {
     width: 100%;
     height: 100%;
+    display: none !important;
+  }
+  header .icons {
+    width: 100% !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -590,29 +583,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
-  header ul li a {
-    color: var(--main-color);
-    text-decoration: none;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    font-size: .9rem !important;
-  }
-  header ul li a:hover {
-    color: var(--third-color);
-  }
-  header ul button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-  }
-  header ul button i {
-    color: var(--third-color);
+  header .left-menu {
+    display: block !important;
   }
   .swiper {
     width: 100%;
@@ -2244,6 +2220,10 @@
   transition: all .3s ease;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html[data-theme='green'] {
   --main-color:#133631;
   --second-color:#276B62;
@@ -2309,14 +2289,105 @@ header ul li a:hover {
   color: var(--third-color);
 }
 
-header ul button {
-  outline: none;
-  border: none;
-  background-color: transparent;
+header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header ul button i {
+header .icons i {
   color: var(--third-color);
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-right: 20px;
+}
+
+header .icons .left-menu {
+  display: none;
+}
+
+.right-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 589874;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.right-menu ul {
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-menu ul li a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.right-menu ul li a:hover {
+  color: var(--third-color);
+}
+
+.right-menu .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.come {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
 }
 
 .swiper {
