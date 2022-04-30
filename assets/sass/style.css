@@ -2307,6 +2307,10 @@ header .icons {
           align-items: center;
 }
 
+header .icons p {
+  margin: 0;
+}
+
 header .icons i {
   color: var(--third-color);
   cursor: pointer;

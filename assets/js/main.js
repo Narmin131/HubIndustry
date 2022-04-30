@@ -117,3 +117,6 @@ window.onload = function () {
     }, 2000);
   }, 2200);
 }
+
+
+// Change lang

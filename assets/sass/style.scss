@@ -58,6 +58,12 @@ header{
           width: auto;
           justify-content: center;
           align-items:center;
+        p{
+            margin: 0;
+            span{
+
+            }
+        }
         i{
             color: var(--third-color);
             cursor: pointer;
